@@ -50,7 +50,7 @@ README.md
   
 The median is significantly below the mean, indicating a right-skewed distribution. This skewness is due to two dates with exceptionally high sales (January 10 and April 5), as shown in the histogram with a pronounced right tail
 
-![Total Sales Histogram](images/TotalSalesHistogram.png)
+![Total Sales Histogram](images/histogram.png)
 
 
 
