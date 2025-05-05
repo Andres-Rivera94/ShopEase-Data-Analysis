@@ -57,6 +57,7 @@ sales.rename(columns={'Total_Amount': 'Total_Sales'}, inplace=True)
 plt.figure(figsize=(10, 6))
 plt.hist(sales['Total_Sales'], bins=10, color='#031366', alpha=0.85)
 plt.xlabel('Total Sales ($)', fontsize=14, color='grey')
+# Add a light horizontal grid
 
 #Movinng the y-axis label to the left
 ax = plt.gca()
@@ -73,6 +74,7 @@ for spine in ['top', 'right', 'left', 'bottom']:
     ax.spines[spine].set_visible(False)
 ax.tick_params(axis='x', colors='grey')
 ax.tick_params(axis='y', colors='grey')
+plt.grid(axis='y', color='lightgrey', linestyle='--', linewidth=0.7, alpha=0.7)
 plt.show()
 
 # %%
@@ -204,8 +206,8 @@ plt.show()
 
 category_sales = sales.groupby('Category')['Total_Sales'].sum().sort_values(ascending=False)
 category_sales.plot(kind='bar', color='#031366',alpha=0.85)
-plt.title('Total Sales by Category', color = 'grey')
-plt.ylabel('Total Sales ($)', color = 'grey', rotation = 0, y =1.05)
+plt.title('Sales by Category', color = 'grey')
+plt.ylabel('($)', color = 'grey', rotation = 0, y =1.05)
 plt.xlabel(None)
 plt.tight_layout()
 
@@ -228,8 +230,8 @@ region_sales_sorted = region_sales.sort_values('Total_Sales', ascending=True)
 
 plt.figure(figsize=(8, 5))
 plt.barh(region_sales_sorted['Region'], region_sales_sorted['Total_Sales'], color='#031366',alpha=0.85)
-plt.title('Total Sales by Region', fontsize=16, color='grey')
-plt.xlabel('Sales', fontsize=14, color='grey')
+plt.title('Sales by Region', fontsize=16, color='grey')
+plt.xlabel('$', fontsize=14, color='grey')
 plt.ylabel(None)
 
 ax = plt.gca()

@@ -26,12 +26,12 @@ ShopEase-Data-Analysis/
 │   ├── sales_data_raw.xlsx
 │   |── sales_data_cleaned.xlsx
 ├── images/
-│   ├── LineChartSales.png
-│   ├── SalesByCategory.png
-│   |── SalesByRegion.png
-|   |── TotalSalesHistogram
+│   ├── sales_by_region.png
+│   ├── sales_by_category.png
+│   |── sales.png
+|   |── histogram.png
 ├── src/
-│   └── analysis_script.py
+│   └── Week1_Project_PyScript.py
 README.md
 ```
 
@@ -52,27 +52,29 @@ The median is significantly below the mean, indicating a right-skewed distributi
 
 ![Total Sales Histogram](images/TotalSalesHistogram.png)
 
-Correlation Matrix
-```text
-	                    Date_ordinal 	Quantity	    Price   	Total_Amount
-	Date_ordinal	    1.000000	    0.103176	    -0.189638	-0.253372
-	Quantity	        0.103176	    1.000000	    -0.423792	-0.199315
-	Price	           -0.189638       -0.423792	    1.000000	0.892401
-	Total_Amount	   -0.253372       -0.199315	    0.892401	1.000000
 
-```
-- **Correlation Analysis:** Strong positive correlation between Price and Total_Sales (as expected, since Total_Sales = Price × Quantity). Visual analysis shows a downward sales trend over time.
+
+|                | Date_ordinal | Quantity   | Price      | Total_Amount |
+|----------------|--------------|------------|------------|--------------|
+| Date_ordinal   | 1.000000     | 0.103176   | -0.189638  | -0.253372    |
+| Quantity       | 0.103176     | 1.000000   | -0.423792  | -0.199315    |
+| Price          | -0.189638    | -0.423792  | 1.000000   | 0.892401     |
+| Total_Amount   | -0.253372    | -0.199315  | 0.892401   | 1.000000     |
+
+
+
+**Correlation Analysis:** Strong positive correlation between Price and Total_Sales (as expected, since Total_Sales = Price × Quantity). Visual analysis shows a downward sales trend over time.
   
 
 
 ## Visualizations 📈
-![Sales Trend](images/LineChartSales.png)
+![Sales Trend](images/sales.png)
 
 
-![Category Sales](images/SalesByCategory.png)
+![Category Sales](images/sales_by_region.png)
 
 
-![Regional Performance](images/SalesByRegion.png)
+![Regional Performance](images/sales_by_category.png)
 
 
 
