@@ -1,19 +1,21 @@
 # Shop Ease Sales Data Analysis (Jan–Jun 2024)
-## Overview
+
+
+**Overview**
+---
 This project presents a structured analysis of Shop Ease’s sales data from January to June 2024. The work includes data cleaning, exploratory analysis, and visualization to uncover key business insights. 
 The analysis follows a clear, academic-inspired structure for readability and transparency.
 
 
-## Table of Contents
-- [Shop Ease Sales Data Analysis (Jan–Jun 2024)](#shop-ease-sales-data-analysis-janjun-2024)
-  - [Overview](#overview)
-  - [Table of Contents](#table-of-contents)
+**Table of Contents**
+---
   - [Project Structure 📁](#project-structure-)
   - [Data Cleaning 🧹](#data-cleaning-)
   - [Exploratory Data Analysis - EDA 📊](#exploratory-data-analysis---eda-)
   - [Visualizations 📈](#visualizations-)
   - [Key Findings 🔑](#key-findings-)
   - [References 📚](#references-)
+  
 
 
 
